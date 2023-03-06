@@ -1,0 +1,22 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: eServer
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone:
+       http://localhost:8081/eureka
+
+logging:
+  level:
+    com:
+      netflix:
+        eureka: off
+        discovery: off
+
